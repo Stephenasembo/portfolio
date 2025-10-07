@@ -1,4 +1,7 @@
-import icon from "../../public/vite.svg"
+import githubIcon from "../assets/icons/github.svg"
+import linkedinIcon from "../assets/icons/linkedin.svg"
+import mailIcon from "../assets/icons/mail.svg"
+import phoneIcon from "../assets/icons/phone.svg"
 
 export default function About() {
   return (
@@ -11,28 +14,28 @@ export default function About() {
       <ul className="flex gap-[1rem] my-8">
         <li>
           <img
-          src={icon}
+          src={githubIcon}
           width={32}
           height={32}
           />
         </li>
         <li>
           <img
-          src={icon}
+          src={mailIcon}
           width={32}
           height={32}
           />
         </li>
         <li>
           <img
-          src={icon}
+          src={phoneIcon}
           width={32}
           height={32}
           />
         </li>
         <li>
           <img
-          src={icon}
+          src={linkedinIcon}
           width={32}
           height={32}
           />
