@@ -5,21 +5,38 @@ import phoneIcon from "../assets/icons/phone.svg"
 
 export default function Contact() {
   return (
-    <div className="mx-2">
-      <h2 className="text-xl my-4">Let's build something together.</h2>
-      <form>
+    <div className="m-2">
+      <h2 className="text-xl my-4">Get in touch with me.</h2>
+      <p>
+        Enter your contact details below and I will get back to you.
+      </p>
+      <form className="flex flex-col gap-2 mt-2">
+        <p>
+          Fields marked with an asterisk(*) are required.
+        </p>
         <div>
-          <label htmlFor="">Name</label>
-          <input type="text" />
+          <label htmlFor="name">Name:*</label>
+          <input
+          className="border-1 block rounded-lg w-[90%] p-2 mt-1"
+          type="text" id="name" name="name" placeholder="Your name"/>
         </div>
         <div>
-          <label htmlFor="">Email</label>
-          <input type="text" />
+          <label htmlFor="email">Email:*</label>
+          <input
+          className="border-1 block rounded-lg w-[90%] p-2 mt-1"
+          type="email" id="email" name="email" placeholder="johndoe@gmail.com"
+          />
         </div>
         <div>
-          <label htmlFor="">Message</label>
-          <textarea></textarea>
+          <label htmlFor="message">Message:*</label>
+          <textarea
+          className="border-1 block rounded-lg w-[90%] p-2 mt-1"
+          id="message" name="message" placeholder="Your message..."
+          ></textarea>
         </div>
+        <button
+        className="w-[max-content] block mx-auto border-1 p-1 rounded-xl px-2 my-2"
+        >Send message</button>
       </form>
       <ul className="flex gap-[1rem] my-8">
         <li>
