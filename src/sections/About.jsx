@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className="mx-2">
       <h1 className="text-4xl my-2 font-extrabold">Stephen Asembo</h1>
-      <h2 className="text-2xl my-4 font-medium">Full stack web developer</h2>
+      <h2 className="text-2xl my-4 font-medium">Full-stack web developer</h2>
       <p className="my-8">
         I build intuitive web apps focusing on optimized performance and clean UI.
       </p>
@@ -41,13 +41,18 @@ export default function About() {
           />
         </li>
       </ul>
-      <div className="">
+      <div className="my-4">
         <h2 className="text-xl mt-16 mb-8">ABOUT</h2>
         <p className="my-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur velit suscipit perferendis provident excepturi, dolores quod tenetur molestias accusamus ratione quos sit et doloremque ullam voluptatibus enim quibusdam? Possimus, recusandae?
+          I'm a developer who enjoys turning ideas into practical and interactive experiences.
+          I craft clean, responsive and pixel-perfect user interfacesbacked by solid engineering to keep them fast and reliable.
+        </p>
+        <p className="my-4">
+          I am passionate about improving workflow efficiency and finding creative ways to automate repetitive tasks.
+          From lightweight task scripts to smart bots, I love designing tools that save time and boost productivity.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab inventore minima quibusdam temporibus quo. Eaque saepe deserunt in ad eius veniam, similique qui necessitatibus, nam minus sit quidem labore ducimus.
+          My focus is on writing code that is simple, adaptable and useful across different contexts.
         </p>
       </div>
     </div>

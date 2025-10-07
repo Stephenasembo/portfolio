@@ -7,25 +7,25 @@ export default function Services() {
         <div>
           <h3 className="text-lg my-2">Front end web development</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis assumenda nulla maiores ad nisi, possimus perferendis adipisci ea sunt perspiciatis sequi! Amet excepturi obcaecati hic commodi voluptate illum quas!
+            I build responsive, accessible and visually appealing interfaces that bring ideas to life across all screen sizes.
           </p>
         </div>
         <div>
           <h3 className="text-lg my-2">Back end web development</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis assumenda nulla maiores ad nisi, possimus perferendis adipisci ea sunt perspiciatis sequi! Amet excepturi obcaecati hic commodi voluptate illum quas!
+            I develop robust and scalable server-side logic and APIs with efficient database integration and secure authentication systems.
           </p>
         </div>
         <div>
           <h3 className="text-lg my-2">Task automation</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis assumenda nulla maiores ad nisi, possimus perferendis adipisci ea sunt perspiciatis sequi! Amet excepturi obcaecati hic commodi voluptate illum quas!
+            I automate repetitive workflows with custom scripts to save time, reduce errors and boost productivity.
           </p>
         </div>
         <div>
           <h3 className="text-lg my-2">Automated bots</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis assumenda nulla maiores ad nisi, possimus perferendis adipisci ea sunt perspiciatis sequi! Amet excepturi obcaecati hic commodi voluptate illum quas!
+            I design smart bots that automate tasks, interact with users and connect with different services.
           </p>
         </div>
       </div>

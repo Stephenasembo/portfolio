@@ -13,7 +13,8 @@ export default function Projects() {
           height={100}
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ut minus mollitia temporibus, sequi necessitatibus magni perspiciatis dolorum consequatur error delectus rerum ab numquam itaque maxime iusto voluptates assumenda atque.
+            A full-stack blogging platform with a client site for readers, an admin dashboard for content management and a backend API powering both sites.
+            Scribbly was designed to make content, creation fast, flexible and fun.
           </p>
         </div>
         <div>
@@ -24,7 +25,8 @@ export default function Projects() {
           height={100}
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste deleniti accusamus illo veniam culpa et nobis cum illum earum! In quo laboriosam dolores. Omnis fugit, labore obcaecati a odio magnam?
+            A modular notification platform that lets users schedule and manage recurring reminders across multiple channels, from email to chat apps.
+            Remindr was designed to automate notification delivery.
           </p>
         </div>
         <div>
@@ -35,7 +37,8 @@ export default function Projects() {
           height={100}
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem alias amet ducimus sint omnis adipisci placeat, dolor consequuntur perferendis, ea cum possimus laboriosam cumque excepturi! Maiores laborum omnis ea error.
+            A secure cloud based file uploader system that lets users organize, manage, and share files with ease.
+            File Uploader was designed to simplify file management and sharing in the cloud.
           </p>
         </div>
       </div>
