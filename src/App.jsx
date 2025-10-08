@@ -17,7 +17,7 @@ function App() {
         <div className="relative">
           <Info />
         </div>
-        <div className='relative'>
+        <div className='relative w-[96%]'>
           <About />
           <Projects />
           <Services />

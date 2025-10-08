@@ -17,20 +17,20 @@ export default function Contact() {
         <div>
           <label htmlFor="name">Name:*</label>
           <input
-          className="border-1 block rounded-lg w-[90%] p-2 mt-1"
+          className="border-1 block rounded-lg w-full py-2 px-[12px] mt-1 h-[48px] max-w-[480px]"
           type="text" id="name" name="name" placeholder="Your name"/>
         </div>
         <div>
           <label htmlFor="email">Email:*</label>
           <input
-          className="border-1 block rounded-lg w-[90%] p-2 mt-1"
+          className="border-1 block rounded-lg w-full py-2 px-[12px] mt-1 h-[48px] max-w-[480px]"
           type="email" id="email" name="email" placeholder="johndoe@gmail.com"
           />
         </div>
         <div>
           <label htmlFor="message">Message:*</label>
           <textarea
-          className="border-1 block rounded-lg w-[90%] p-2 mt-1"
+          className="border-1 block rounded-lg w-full py-2 px-[12px] mt-1 max-w-[480px]"
           id="message" name="message" placeholder="Your message..."
           ></textarea>
         </div>
@@ -38,7 +38,7 @@ export default function Contact() {
         className="w-[max-content] block mx-auto border-1 p-1 rounded-xl px-2 my-2"
         >Send message</button>
       </form>
-      <ul className="flex gap-[1rem] my-8">
+      <ul className="flex gap-[1.5rem] my-8">
         <li>
           <img
           src={githubIcon}
