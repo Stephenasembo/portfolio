@@ -3,7 +3,7 @@ export default function About() {
     <div>
       <div className="my-4 lg:-mt-4 relative mb-12">
         <div className="sticky top-0">
-          <h2 className="text-2xl lg:mt-10 my-4 mt-8 font-semibold">ABOUT</h2>
+          <h2 className="text-2xl lg:mt-10 my-4 mt-8 font-semibold bg-slate-200/90 backdrop-blur-md border-b border-slate-300/50">ABOUT</h2>
         </div>
         <p className="my-4">
           I'm a developer who enjoys turning ideas into practical and interactive experiences.

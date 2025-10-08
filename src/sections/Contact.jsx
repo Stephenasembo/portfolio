@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div className="my-2 relative mb-12">
       <div className="sticky top-0">
-        <h2 className="text-xl my-4 font-semibold">GET IN TOUCH</h2>
+        <h2 className="text-xl my-4 font-semibold bg-slate-200/90 backdrop-blur-md border-b border-slate-300/50">GET IN TOUCH</h2>
       </div>
       <p>
         Enter your contact details below and I will get back to you.
@@ -37,7 +37,7 @@ export default function Contact() {
           ></textarea>
         </div>
         <button
-        className="w-[max-content] block mx-auto border-1 p-1 rounded-xl px-2 my-2"
+        className="w-[max-content] block mx-auto md:mx-0 p-1 rounded-lg px-2 my-2 bg-sky-500 cursor-pointer text-slate-50 hover:scale-125 hover:bg-sky-600 duration-300 ease-out font-semibold ring-2 ring-sky-400/30"
         >Send message</button>
       </form>
       <ul className="flex gap-[1.5rem] my-8 justify-center">

@@ -11,7 +11,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="mx-2 lg:mx-8">
+    <div className="px-2 lg:px-8 bg-slate-200">
       <NavigationBar />
       <div className="lg:grid lg:grid-cols-2">
         <div className="relative">

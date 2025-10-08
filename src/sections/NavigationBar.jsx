@@ -8,7 +8,7 @@ export default function NavigationBar() {
 
   return (
     <div>
-      <div className="my-2 grid grid-cols-2 items-center lg:grid-cols-[max-content_1fr]">
+      <div className="mb-2 pt-2 grid grid-cols-2 items-center lg:grid-cols-[max-content_1fr]">
         <span className="border-1 w-[max-content] p-2 text-xl font-bold rounded-xl">SA</span>
         <button
         className="border-1 w-[max-content] justify-self-end p-1 rounded-lg lg:hidden"
@@ -52,7 +52,10 @@ export function Links() {
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </div>
-      <button className="mt-[1rem] border-1 rounded-lg px-4 py-1">Hire Me</button>
+      <button
+      className="mt-[1rem] rounded-lg px-4 py-1 bg-sky-500 cursor-pointer text-slate-50 hover:scale-125 hover:bg-sky-600 duration-300 ease-out font-semibold ring-2 ring-sky-400/30">
+        Hire Me
+      </button>
     </div>
   )
 }
