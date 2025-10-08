@@ -2,7 +2,7 @@ import projectImg from "../../public/vite.svg"
 
 export default function Projects() {
   return (
-    <div className="mx-2">
+    <div>
       <h2 className="text-xl">Projects</h2>
       <div className="flex flex-col gap-[2rem]">
         <div>

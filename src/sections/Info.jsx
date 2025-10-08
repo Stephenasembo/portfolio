@@ -1,0 +1,47 @@
+import githubIcon from "../assets/icons/github.svg"
+import linkedinIcon from "../assets/icons/linkedin.svg"
+import mailIcon from "../assets/icons/mail.svg"
+import phoneIcon from "../assets/icons/phone.svg"
+
+
+export default function Info() {
+  return (
+    <div className="lg:fixed top-0">
+      <h1 className="text-4xl my-2 font-extrabold">Stephen Asembo</h1>
+      <h2 className="text-2xl my-4 font-medium">Full-stack web developer</h2>
+      <p className="my-8 w-[70%]">
+        I build intuitive web apps focusing on optimized performance and clean UI.
+      </p>
+      <ul className="flex gap-[1rem] my-8">
+        <li>
+          <img
+          src={githubIcon}
+          width={32}
+          height={32}
+          />
+        </li>
+        <li>
+          <img
+          src={mailIcon}
+          width={32}
+          height={32}
+          />
+        </li>
+        <li>
+          <img
+          src={phoneIcon}
+          width={32}
+          height={32}
+          />
+        </li>
+        <li>
+          <img
+          src={linkedinIcon}
+          width={32}
+          height={32}
+          />
+        </li>
+      </ul>
+    </div>
+  )
+}

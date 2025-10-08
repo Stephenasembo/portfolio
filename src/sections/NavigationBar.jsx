@@ -32,7 +32,7 @@ export default function NavigationBar() {
 
 function Links() {
   return (
-    <div className="m-2 text-lg lg:flex lg:gap-[1rem]">
+    <div className="my-2 text-lg lg:flex lg:gap-[1rem]">
       <div className="flex items-center lg:hidden">
         <label htmlFor="dark">Dark mode</label>
         <input

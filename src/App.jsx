@@ -5,18 +5,26 @@ import Services from './sections/Services'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import NavigationBar from './sections/NavigationBar'
+import Info from './sections/Info'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
+    <div className="mx-2 lg:mx-8">
       <NavigationBar />
-      <About />
-      <Projects />
-      <Services />
-      <Contact />
-      <Footer />
+      <div className="lg:grid lg:grid-cols-2">
+        <div className="relative">
+          <Info />
+        </div>
+        <div className='relative'>
+          <About />
+          <Projects />
+          <Services />
+          <Contact />
+          <Footer />
+        </div>
+      </div>
     </div>
 )
 }
