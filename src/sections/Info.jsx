@@ -18,7 +18,7 @@ export default function Info() {
           <Links />
         </div>
       </div>
-      <ul className="flex gap-[1.5rem] my-8">
+      <ul className="flex gap-[1.5rem]">
         <li>
           <img
           src={githubIcon}

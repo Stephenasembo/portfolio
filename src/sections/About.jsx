@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div>
       <div className="my-4 lg:-mt-4">
-        <h2 className="text-xl mt-16 mb-8">ABOUT</h2>
+        <h2 className="text-xl lg:mt-16 my-4 mt-8">ABOUT</h2>
         <p className="my-4">
           I'm a developer who enjoys turning ideas into practical and interactive experiences.
           I craft clean, responsive and pixel-perfect user interfacesbacked by solid engineering to keep them fast and reliable.

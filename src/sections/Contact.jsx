@@ -38,7 +38,7 @@ export default function Contact() {
         className="w-[max-content] block mx-auto border-1 p-1 rounded-xl px-2 my-2"
         >Send message</button>
       </form>
-      <ul className="flex gap-[1.5rem] my-8">
+      <ul className="flex gap-[1.5rem] my-8 justify-center">
         <li>
           <img
           src={githubIcon}
