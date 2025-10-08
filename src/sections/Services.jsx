@@ -1,7 +1,9 @@
 export default function Services() {
   return (
-    <div>
-      <h2 className="text-xl my-4">Services</h2>
+    <div className="relative mb-12">
+      <div className="sticky top-0 background-white">
+        <h2 className="text-xl my-4 font-semibold">SERVICES</h2>
+      </div>
       <p>Below are some of the services I can offer</p>
       <div className="flex flex-col gap-[1rem]">
         <div>

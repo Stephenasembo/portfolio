@@ -1,6 +1,7 @@
 import { useState } from "react"
 import navBurger from "../assets/icons/menu-burger.svg"
 import verticalBurger from "../assets/icons/menu-burger-vertical-thin.svg"
+import darkMode from "../assets/icons/dark-mode.svg"
 
 export default function NavigationBar() {
   const [navExpanded, setNavExpanded] = useState(false);
@@ -20,10 +21,10 @@ export default function NavigationBar() {
           />
         </button>
         <button
-        className="border-1 w-[max-content] justify-self-end p-1 rounded-lg hidden lg:block"
+        className="w-[max-content] justify-self-end hidden lg:block"
         >
           <img
-          src={navBurger}
+          src={darkMode}
           width={32}
           height={32}
           />

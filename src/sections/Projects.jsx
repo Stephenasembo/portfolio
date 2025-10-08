@@ -2,44 +2,76 @@ import projectImg from "../../public/vite.svg"
 
 export default function Projects() {
   return (
-    <div>
-      <h2 className="text-xl">Projects</h2>
+    <div className="relative mb-12">
+      <div className="sticky top-0 background-white">
+        <h2 className="text-xl my-4 font-semibold">PROJECTS</h2>
+      </div>
       <div className="flex flex-col gap-[2rem]">
         <div>
           <h3 className="text-lg my-2">Scribbly</h3>
-          <img
-          src={projectImg}
-          width={100}
-          height={100}
-          />
-          <p>
-            A full-stack blogging platform with a client site for readers, an admin dashboard for content management and a backend API powering both sites.
-            Scribbly was designed to make content, creation fast, flexible and fun.
-          </p>
+          <div className="lg:grid lg:grid-cols-[max-content_1fr] gap-[2rem]">
+            <img
+            src={projectImg}
+            width={100}
+            height={100}
+            />
+            <div>
+              <p>
+                A full-stack blogging platform with a client site for readers, an admin dashboard for content management and a backend API powering both sites.
+                Scribbly was designed to make content, creation fast, flexible and fun.
+              </p>
+              <div className="my-2 flex gap-2 flex-wrap">
+                <span className="border-1 rounded-full px-2">React</span>
+                <span className="border-1 rounded-full px-2">Expressjs</span>
+                <span className="border-1 rounded-full px-2">Nodejs</span>
+                <span className="border-1 rounded-full px-2">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div>
-          <h3 className="text-lg my-2">Remindr</h3>
-          <img
-          src={projectImg}
-          width={100}
-          height={100}
-          />
-          <p>
-            A modular notification platform that lets users schedule and manage recurring reminders across multiple channels, from email to chat apps.
-            Remindr was designed to automate notification delivery.
-          </p>
+          <h3 className="text-lg my-2 font-medium">Remindr</h3>
+          <div className="lg:grid lg:grid-cols-[max-content_1fr] gap-[2rem]">
+            <img
+            src={projectImg}
+            width={100}
+            height={100}
+            />
+            <div>
+              <p>
+                A modular notification platform that lets users schedule and manage recurring reminders across multiple channels, from email to chat apps.
+                Remindr was designed to automate notification delivery.
+              </p>
+              <div className="my-2 flex gap-2 flex-wrap">
+                <span className="border-1 rounded-full px-2">React</span>
+                <span className="border-1 rounded-full px-2">Expressjs</span>
+                <span className="border-1 rounded-full px-2">Nodejs</span>
+                <span className="border-1 rounded-full px-2">PostgreSQL</span>
+                <span className="border-1 rounded-full px-2">AWS</span>
+              </div>
+            </div>
+          </div>
         </div>
         <div>
-          <h3 className="text-lg my-2">File Uploader</h3>
-          <img
-          src={projectImg}
-          width={100}
-          height={100}
-          />
-          <p>
-            A secure cloud based file uploader system that lets users organize, manage, and share files with ease.
-            File Uploader was designed to simplify file management and sharing in the cloud.
-          </p>
+          <h3 className="text-lg my-2 font-medium">File Uploader</h3>
+          <div className="lg:grid lg:grid-cols-[max-content_1fr] gap-[2rem]">
+            <img
+            src={projectImg}
+            width={100}
+            height={100}
+            />
+            <div>
+              <p>
+                A secure cloud based file uploader system that lets users organize, manage, and share files with ease.
+                File Uploader was designed to simplify file management and sharing in the cloud.
+              </p>
+              <div className="my-2 flex gap-2">
+                <span className="border-1 rounded-full px-2">Expressjs</span>
+                <span className="border-1 rounded-full px-2">Nodejs</span>
+                <span className="border-1 rounded-full px-2">Supabase</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

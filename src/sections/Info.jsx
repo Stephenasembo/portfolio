@@ -7,7 +7,7 @@ import {Links} from "../sections/NavigationBar"
 
 export default function Info() {
   return (
-    <div className="lg:fixed top-[96px] lg:flex lg:flex-col gap-[1rem]">
+    <div className="lg:fixed top-[72px] lg:flex lg:flex-col gap-[1rem]">
       <div>
         <h1 className="text-4xl my-2 font-extrabold">Stephen Asembo</h1>
         <h2 className="text-2xl my-4 font-medium">Full-stack web developer</h2>

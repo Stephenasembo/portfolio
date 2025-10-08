@@ -1,8 +1,10 @@
 export default function About() {
   return (
     <div>
-      <div className="my-4 lg:-mt-4">
-        <h2 className="text-xl lg:mt-16 my-4 mt-8">ABOUT</h2>
+      <div className="my-4 lg:-mt-4 relative mb-12">
+        <div className="sticky top-0">
+          <h2 className="text-2xl lg:mt-10 my-4 mt-8 font-semibold">ABOUT</h2>
+        </div>
         <p className="my-4">
           I'm a developer who enjoys turning ideas into practical and interactive experiences.
           I craft clean, responsive and pixel-perfect user interfacesbacked by solid engineering to keep them fast and reliable.
