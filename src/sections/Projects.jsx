@@ -4,13 +4,13 @@ export default function Projects() {
   return (
     <div className="relative mb-12">
       <div className="sticky top-0 background-white">
-        <h2 className="text-xl my-4 font-semibold bg-slate-200/90 backdrop-blur-md border-b border-slate-300/50">PROJECTS</h2>
+        <h2 className="text-2xl my-4 font-semibold bg-slate-200/90 backdrop-blur-md border-b border-slate-300/50 py-2">PROJECTS</h2>
       </div>
       <div className="flex flex-col gap-[2rem]">
         <div
         className=" border border-slate-300/60 rounded-xl p-2 shadow-sm hover:shadow-md cursor-pointer duration-300 ease-out hover:scale-105 hover:bg-slate-50/30"
         >
-          <h3 className="text-lg my-2">Scribbly</h3>
+          <h3 className="text-lg my-2 font-medium">Scribbly</h3>
           <div
           className="lg:grid lg:grid-cols-[max-content_1fr] gap-[2rem]">
             <img
