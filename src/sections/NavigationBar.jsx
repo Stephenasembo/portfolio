@@ -2,6 +2,7 @@ import { useState } from "react"
 import navBurger from "../assets/icons/menu-burger.svg"
 import verticalBurger from "../assets/icons/menu-burger-vertical-thin.svg"
 import darkMode from "../assets/icons/dark-mode.svg"
+import Pumpkin from "../svgs";
 
 export default function NavigationBar() {
   const [navExpanded, setNavExpanded] = useState(false);
@@ -9,7 +10,13 @@ export default function NavigationBar() {
   return (
     <div>
       <div className="mb-2 pt-2 grid grid-cols-2 items-center lg:grid-cols-[max-content_1fr]">
-        <span className="border-1 w-[max-content] p-2 text-xl font-bold rounded-xl">SA</span>
+        {/* <span className="border-1 w-[max-content] p-2 text-xl font-bold rounded-xl">SA</span> */}
+        <button
+        className="cursor-pointer"
+        onClick={() => alert("Haunted mode activated!")}
+        >
+          <Pumpkin />
+        </button>
         <button
         className="border-1 w-[max-content] justify-self-end p-1 rounded-lg lg:hidden"
         onClick={() => setNavExpanded(!navExpanded)}

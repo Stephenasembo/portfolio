@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import About from './sections/About'
 import Projects from './sections/Projects'
 import Services from './sections/Services'
@@ -8,7 +7,6 @@ import NavigationBar from './sections/NavigationBar'
 import Info from './sections/Info'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="px-2 lg:px-8 bg-slate-200">
