@@ -1,4 +1,5 @@
 import reactIcon from "../assets/icons/react.svg"
+import { Pumpkin } from "../svgs"
 
 export default function Footer() {
   return (
@@ -13,6 +14,17 @@ export default function Footer() {
         height={32}
         />  
       </p>
+      <div className="flex justify-around mt-2">
+        <Pumpkin
+        styles="animate-bounce"
+        />
+        <Pumpkin
+        styles="animate-bounce"
+        />
+        <Pumpkin
+        styles="animate-bounce"
+        />
+      </div>
     </div>
   )
 }

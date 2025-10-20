@@ -1,11 +1,12 @@
 import { useState } from "react"
 import navBurger from "../assets/icons/menu-burger.svg"
 import verticalBurger from "../assets/icons/menu-burger-vertical-thin.svg"
-import {Pumpkin, Dark, Light} from "../svgs";
+import {Pumpkin, Dark, Light, Bulb} from "../svgs";
 
 export default function NavigationBar({haunted, setHaunted}) {
   const [navExpanded, setNavExpanded] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [lit, setLit] = useState(false);
 
   return (
     <div>
@@ -29,9 +30,17 @@ export default function NavigationBar({haunted, setHaunted}) {
         </button>
         <button
         className="w-[max-content] justify-self-end hidden lg:block cursor-pointer"
-        onClick={() => setDarkMode(!darkMode)}
+        onClick={() => {
+          if(haunted) {
+            setLit(!lit)
+          } else {
+            setDarkMode(!darkMode)
+          }
+        }}
         >
-          {darkMode ? <Dark /> : <Light />}
+          {haunted ? <Bulb
+          isLit={lit}
+          /> : darkMode ? <Dark /> : <Light />}
         </button>
       </div>
       <div>

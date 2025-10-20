@@ -14,7 +14,7 @@ function App() {
   const position = useMousePosition()
 
   return (
-    <div className={`px-2 lg:px-8 ${haunted ? "haunted" : "bg-slate-200"} transition-all duration-700`}>
+    <div className={`relative px-2 lg:px-8 ${haunted ? "haunted" : "bg-slate-200"} transition-all duration-700`}>
       <NavigationBar
       haunted={haunted}
       setHaunted={setHaunted}

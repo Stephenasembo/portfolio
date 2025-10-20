@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 
-function Pumpkin() {
+function Pumpkin({styles}) {
 	return(
 		<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24"
-    className="pumpkin"
+    className={`pumpkin ${styles}`}
     >
 			<g fill="none" fillRule="evenodd">
 				<path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"></path>
@@ -60,7 +60,7 @@ function Spider({position}) {
     className={`spider absolute transition-all duration-500 ease-linear hidden lg:block spider-glow ${visible? "opacity-100" : "opacity-0"} pointer-events-none`}
     style={{
        left: `${(position.x - 20) * 1.05}px`,
-       top: `${(position.y - 20) * 1.05}px`,
+       top: `${(position.y - 70) * 1.05}px`,
       transform: "translate(-50%, -50%)",
     }}
     >
@@ -74,4 +74,21 @@ function Spider({position}) {
   )
 }
 
-export { Pumpkin, Dark, Light, FloatingGhost, Spider };
+function Bulb({isLit}) {
+  return(
+    <div>
+      <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16"
+      className={`-scale-y-100 ${isLit? "text-red-500 bulb-lit" : "text-gray-500"}`}
+      >
+        <path fill-rule="nonzero" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3c1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4c.45-.75 1-2.08 1-3c0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11c-.86 1.41-1.25 2.06-1.45 3.23c-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17c-.2-1.17-.59-1.83-1.45-3.23c-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4c1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z" fill="currentColor"/>
+      </svg>
+      {isLit && (
+          <span className="absolute w-32 h-32 rounded-full bg-red-500 right-6 blur-3xl"></span>
+      )}
+    </div>
+  )
+}
+
+
+
+export { Pumpkin, Dark, Light, FloatingGhost, Spider, Bulb };
