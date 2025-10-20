@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <div className="my-2 relative mb-12">
       <div className="sticky top-0">
-        <h2 className="text-2xl my-4 font-semibold bg-slate-200/90 backdrop-blur-md border-b border-slate-300/50 py-2">GET IN TOUCH</h2>
+        <h2 className="sectionTitle">GET IN TOUCH</h2>
       </div>
       <p>
         Enter your contact details below and I will get back to you.

@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 @import "tailwindcss";
 
 @layer components {
   .haunted {
-    @apply bg-black text-white transition-all duration-700;
+    @apply bg-black transition-all duration-700 text-gray-300;
+  }
+
+  .haunted h1, .haunted h2, .haunted h3 {
+    @apply font-["Creepster"]
+  }
+
+  .haunted p, .haunted a, .haunted span {
+    @apply font-["Irish_Grover"]
   }
 
   .haunted .pumpkin {
@@ -30,6 +40,18 @@
 
   .lit {
     filter: drop-shadow(0 9px 9px rgb(255, 0, 0 / 0.6))
+  }
+
+  .sectionTitle {
+    @apply text-2xl my-4 font-semibold bg-slate-200/90 backdrop-blur-md border-b border-slate-300/50 py-2 text-black
+  }
+
+  .haunted .sectionTitle {
+    @apply bg-violet-200/90 px-2 rounded-lg
+  }
+
+  .haunted a:hover {
+    @apply text-red-400
   }
 }
 
