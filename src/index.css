@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@layer components {
+  .haunted {
+    @apply bg-black text-white transition-all duration-700;
+  }
+
+  .haunted svg {
+    @apply text-orange-600 hover:text-orange-400
+  }
+}

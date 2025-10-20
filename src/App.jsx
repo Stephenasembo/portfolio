@@ -5,12 +5,17 @@ import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import NavigationBar from './sections/NavigationBar'
 import Info from './sections/Info'
+import { useState } from 'react'
 
 function App() {
+  const [haunted, setHaunted] = useState(false);
 
   return (
-    <div className="px-2 lg:px-8 bg-slate-200">
-      <NavigationBar />
+    <div className={`px-2 lg:px-8 ${haunted ? "haunted" : "bg-slate-200"} transition-all duration-700`}>
+      <NavigationBar
+      haunted={haunted}
+      setHaunted={setHaunted}
+      />
       <div className="lg:grid lg:grid-cols-2">
         <div className="relative">
           <Info />
