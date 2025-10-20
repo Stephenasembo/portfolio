@@ -18,7 +18,9 @@ function App() {
       />
       <div className="lg:grid lg:grid-cols-2">
         <div className="relative">
-          <Info />
+          <Info
+          haunted={haunted}
+          />
         </div>
         <div className='relative w-[96%]'>
           <About />

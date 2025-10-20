@@ -3,9 +3,10 @@ import linkedinIcon from "../assets/icons/linkedin.svg"
 import mailIcon from "../assets/icons/mail.svg"
 import phoneIcon from "../assets/icons/phone.svg"
 import {Links} from "../sections/NavigationBar"
+import {FloatingGhost} from "../svgs"
 
 
-export default function Info() {
+export default function Info({haunted}) {
   return (
     <div className="lg:fixed top-[72px] lg:flex lg:flex-col gap-[1rem]">
       <div>
@@ -18,6 +19,13 @@ export default function Info() {
           <Links />
         </div>
       </div>
+      {haunted &&
+      <div
+      className="animate-wiggle w-full"
+      >
+        <FloatingGhost />
+      </div>
+      }
       <ul className="flex gap-[1.5rem]">
         <li>
           <img

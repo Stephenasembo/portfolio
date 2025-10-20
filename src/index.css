@@ -5,7 +5,39 @@
     @apply bg-black text-white transition-all duration-700;
   }
 
-  .haunted svg {
+  .haunted .pumpkin {
     @apply text-orange-600 hover:text-orange-400
+  }
+
+ .ghost {
+    @apply text-white;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
+    animation: float-sine 10s linear infinite;
+  }
+}
+
+@keyframes float-sine {
+  0% {
+    transform: translateX(-150px) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(calc(50vw + 150px)) translateY(-50px);
+  }
+  50% {
+    transform: translateX(calc(100vw)) translateY(0);
+  }
+  75% {
+    transform: translateX(50vw) translateY(50px)
+  }
+  98% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-150px) translateY(0);
+    opacity: 0;
   }
 }
