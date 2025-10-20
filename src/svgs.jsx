@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react"
+
 function Pumpkin() {
 	return(
 		<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24"
@@ -40,9 +42,22 @@ function FloatingGhost() {
 }
 
 function Spider({position}) {
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    setVisible(true);
+
+    const visibilityTimer = setTimeout(() => {
+      setVisible(false);
+    }, 3000)
+    return(() => {
+      clearTimeout(visibilityTimer)
+    })
+  }, [position.x, position.y])
+
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 128 128"
-    className={`spider absolute transition-all duration-700 ease-linear hidden lg:block spider-glow`}
+    className={`spider absolute transition-all duration-500 ease-linear hidden lg:block spider-glow ${visible? "opacity-100" : "opacity-0"} pointer-events-none`}
     style={{
        left: `${(position.x - 20) * 1.05}px`,
        top: `${(position.y - 20) * 1.05}px`,
