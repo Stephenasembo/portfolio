@@ -1,4 +1,4 @@
-export default function Pumpkin() {
+function Pumpkin() {
 	return(
 		<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24">
 			<g fill="none" fillRule="evenodd">
@@ -8,3 +8,23 @@ export default function Pumpkin() {
 		</svg>
 	)
 }
+
+function Dark() {
+  return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24">
+      <path fill="#000000" d="M12.741 20.917a9.389 9.389 0 0 1-1.395-.105a9.141 9.141 0 0 1-1.465-17.7a1.177 1.177 0 0 1 1.21.281a1.273 1.273 0 0 1 .325 1.293a8.112 8.112 0 0 0-.353 2.68a8.266 8.266 0 0 0 4.366 6.857a7.628 7.628 0 0 0 3.711.993a1.242 1.242 0 0 1 .994 1.963a9.148 9.148 0 0 1-7.393 3.738ZM10.261 4.05a.211.211 0 0 0-.065.011a8.137 8.137 0 1 0 9.131 12.526a.224.224 0 0 0 .013-.235a.232.232 0 0 0-.206-.136a8.619 8.619 0 0 1-4.188-1.116a9.274 9.274 0 0 1-4.883-7.7a9.123 9.123 0 0 1 .4-3.008a.286.286 0 0 0-.069-.285a.184.184 0 0 0-.133-.057Z"/>
+    </svg>
+  )
+}
+
+function Light() {
+  return(
+    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="#000000">
+      <g fill="none" stroke="#000000" stroke-width="2"><circle cx="12" cy="12" r="4" stroke-linejoin="round"/>
+        <path stroke-linecap="round" d="M20 12h1M3 12h1m8 8v1m0-18v1m5.657 13.657l.707.707M5.636 5.636l.707.707m0 11.314l-.707.707M18.364 5.636l-.707.707"/>
+      </g>
+    </svg>
+  )
+}
+
+export { Pumpkin, Dark, Light };
