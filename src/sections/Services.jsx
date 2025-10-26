@@ -2,7 +2,9 @@ export default function Services() {
   return (
     <div className="relative mb-12">
       <div className="sticky top-0 background-white">
-        <h2 className="sectionTitle">SERVICES</h2>
+        <h2
+        id="services"
+        className="sectionTitle">SERVICES</h2>
       </div>
       <div className="flex flex-col gap-[1rem]">
         <div

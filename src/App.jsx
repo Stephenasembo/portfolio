@@ -33,7 +33,9 @@ function App() {
           <Projects />
           <Services />
           <Contact />
-          <Footer />
+          <Footer
+          haunted={haunted}
+          />
         </div>
       </div>
     </div>

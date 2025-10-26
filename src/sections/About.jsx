@@ -3,7 +3,9 @@ export default function About() {
     <div>
       <div className="my-4 lg:-mt-4 relative mb-12">
         <div className="sticky top-0">
-          <h2 className="sectionTitle lg:mt-10 mt-8">ABOUT</h2>
+          <h2
+          id="about"
+          className="sectionTitle lg:mt-10 mt-8">ABOUT</h2>
         </div>
         <p className="my-4">
           I'm a developer who enjoys turning ideas into practical and interactive experiences.

@@ -7,7 +7,9 @@ export default function Contact() {
   return (
     <div className="my-2 relative mb-12">
       <div className="sticky top-0">
-        <h2 className="sectionTitle">GET IN TOUCH</h2>
+        <h2
+        id="contact"
+        className="sectionTitle">GET IN TOUCH</h2>
       </div>
       <p>
         Enter your contact details below and I will get back to you.
@@ -46,36 +48,26 @@ export default function Contact() {
         className="w-[max-content] block mx-auto md:mx-0 p-1 rounded-lg px-2 my-2 bg-sky-500 cursor-pointer text-slate-50 hover:scale-125 hover:bg-sky-600 duration-300 ease-out font-semibold ring-2 ring-sky-400/30"
         >Send message</button>
       </form>
-      <ul className="flex gap-[1.5rem] my-8 justify-center">
-        <li>
-          <img
-          src={githubIcon}
-          width={32}
-          height={32}
-          />
-        </li>
-        <li>
-          <img
-          src={mailIcon}
-          width={32}
-          height={32}
-          />
-        </li>
-        <li>
-          <img
-          src={phoneIcon}
-          width={32}
-          height={32}
-          />
-        </li>
-        <li>
-          <img
-          src={linkedinIcon}
-          width={32}
-          height={32}
-          />
-        </li>
-      </ul>
+      <div className="flex gap-4 mt-4 mx-auto justify-center">
+        <a href="mailto:stephenasembo524@gmail.com" className="btn-contact">
+          <span>📧</span>
+          <span>Email Me</span>
+        </a>
+        <a href="tel:+254706479001"
+        className="btn-contact">
+          <span>📞</span>
+          <span>Call Me</span>
+        </a>
+        <a href="https://github.com/Stephenasembo" target="_blank" rel="noopener noreferrer" className="btn-contact">
+          <span>💻</span>
+          <span>View GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/stephen-asembo-91229327a" target="_blank" rel="noopener noreferrer" className="btn-contact">
+          <span>🔗</span>
+          <span>Connect on LinkedIn</span>
+        </a>
+      </div>
+
     </div>
   )
 }

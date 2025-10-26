@@ -1,7 +1,7 @@
 import reactIcon from "../assets/icons/react.svg"
 import { Pumpkin } from "../svgs"
 
-export default function Footer() {
+export default function Footer({haunted}) {
   return (
     <div>
       <p className="text-center mb-2"><span>&copy;</span> 2025 Stephen Asembo</p>
@@ -14,6 +14,7 @@ export default function Footer() {
         height={32}
         />  
       </p>
+      {haunted &&
       <div className="flex justify-around mt-2">
         <Pumpkin
         styles="animate-bounce"
@@ -25,6 +26,7 @@ export default function Footer() {
         styles="animate-bounce"
         />
       </div>
+      }
     </div>
   )
 }

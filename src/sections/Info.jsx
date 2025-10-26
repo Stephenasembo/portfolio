@@ -26,34 +26,47 @@ export default function Info({haunted}) {
         <FloatingGhost />
       </div>
       }
-      <ul className="flex gap-[1.5rem]">
-        <li>
+      <ul className="flex gap-[1.5rem] flex-col lg:flex-row">
+        <li className="social">
           <img
           src={githubIcon}
           width={32}
           height={32}
           />
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/Stephenasembo"
+          className="lg:hidden"
+          >View My Projects</a>
         </li>
-        <li>
+        <li
+        className="social"
+        >
           <img
           src={mailIcon}
           width={32}
           height={32}
           />
+          <span className="lg:hidden">stephenasembo524@gmail.com</span>
         </li>
-        <li>
+        <li className="social">
           <img
           src={phoneIcon}
           width={32}
           height={32}
           />
+          <span className="lg:hidden">+254706479001</span>
         </li>
-        <li>
+        <li className="social">
           <img
           src={linkedinIcon}
           width={32}
           height={32}
           />
+          <a
+          className="lg:hidden"
+          target="_blank" rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/stephen-asembo-91229327a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+          Connect on LinkedIn
+          </a>
         </li>
       </ul>
     </div>

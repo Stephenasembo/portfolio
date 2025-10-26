@@ -4,7 +4,9 @@ export default function Projects() {
   return (
     <div className="relative mb-12">
       <div className="sticky top-0 background-white">
-        <h2 className="sectionTitle">PROJECTS</h2>
+        <h2
+        id="projects"
+        className="sectionTitle">PROJECTS</h2>
       </div>
       <div className="flex flex-col gap-[2rem]">
         <div

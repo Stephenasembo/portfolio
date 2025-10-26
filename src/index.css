@@ -53,6 +53,14 @@
   .haunted a:hover {
     @apply text-red-400
   }
+
+  .social {
+    @apply flex gap-2 items-center lg:inline-block
+  }
+
+  .btn-contact {
+    @apply flex gap-1 flex-col items-center
+  }
 }
 
 @keyframes float-sine {
