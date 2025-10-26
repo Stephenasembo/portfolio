@@ -1,8 +1,3 @@
-import githubIcon from "../assets/icons/github.svg"
-import linkedinIcon from "../assets/icons/linkedin.svg"
-import mailIcon from "../assets/icons/mail.svg"
-import phoneIcon from "../assets/icons/phone.svg"
-
 export default function Contact() {
   return (
     <div className="my-2 relative mb-12">

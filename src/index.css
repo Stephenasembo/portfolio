@@ -55,7 +55,7 @@
   }
 
   .social {
-    @apply flex gap-2 items-center lg:inline-block
+    @apply flex gap-2 items-center
   }
 
   .btn-contact {

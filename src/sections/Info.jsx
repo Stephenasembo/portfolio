@@ -1,9 +1,6 @@
-import githubIcon from "../assets/icons/github.svg"
-import linkedinIcon from "../assets/icons/linkedin.svg"
-import mailIcon from "../assets/icons/mail.svg"
-import phoneIcon from "../assets/icons/phone.svg"
 import {Links} from "../sections/NavigationBar"
-import {FloatingGhost} from "../svgs"
+import { GithubIcon, EmailIcon, PhoneIcon, LinkedinIcon, LinkArrow } from "./components/svgs"
+import {FloatingGhost} from "../HauntedSvgs"
 
 
 export default function Info({haunted}) {
@@ -26,47 +23,31 @@ export default function Info({haunted}) {
         <FloatingGhost />
       </div>
       }
-      <ul className="flex gap-[1.5rem] flex-col lg:flex-row">
+      <ul className="flex gap-[1.5rem] flex-col lg:mt-4">
         <li className="social">
-          <img
-          src={githubIcon}
-          width={32}
-          height={32}
-          />
+          <GithubIcon />
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/Stephenasembo"
-          className="lg:hidden"
-          >View My Projects</a>
+          >View my projects</a>
+          <LinkArrow />
         </li>
         <li
         className="social"
         >
-          <img
-          src={mailIcon}
-          width={32}
-          height={32}
-          />
-          <span className="lg:hidden">stephenasembo524@gmail.com</span>
+          <EmailIcon />
+          <span>stephenasembo524@gmail.com</span>
         </li>
-        <li className="social">
-          <img
-          src={phoneIcon}
-          width={32}
-          height={32}
-          />
-          <span className="lg:hidden">+254706479001</span>
+        <li className="social lg:hidden">
+          <PhoneIcon />
+          <span>+254706479001</span>
         </li>
-        <li className="social">
-          <img
-          src={linkedinIcon}
-          width={32}
-          height={32}
-          />
+        <li className="social lg:hidden">
+          <LinkedinIcon />
           <a
-          className="lg:hidden"
           target="_blank" rel="noopener noreferrer"
           href="https://www.linkedin.com/in/stephen-asembo-91229327a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
           Connect on LinkedIn
           </a>
+          <LinkArrow />
         </li>
       </ul>
     </div>

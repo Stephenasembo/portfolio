@@ -1,7 +1,6 @@
 import { useState } from "react"
-import navBurger from "../assets/icons/menu-burger.svg"
-import verticalBurger from "../assets/icons/menu-burger-vertical-thin.svg"
-import {Pumpkin, Dark, Light, Bulb} from "../svgs";
+import {Pumpkin, Dark, Light, Bulb} from "../HauntedSvgs";
+import { HorizontalBurger, VerticalBurger } from "./components/svgs";
 
 export default function NavigationBar({haunted, setHaunted}) {
   const [navExpanded, setNavExpanded] = useState(false);
@@ -22,11 +21,7 @@ export default function NavigationBar({haunted, setHaunted}) {
         className="border-1 w-[max-content] justify-self-end p-1 rounded-lg lg:hidden"
         onClick={() => setNavExpanded(!navExpanded)}
         >
-          <img
-          src={navExpanded ? verticalBurger : navBurger}
-          width={32}
-          height={32}
-          />
+          {navExpanded ? <VerticalBurger /> : <HorizontalBurger />}
         </button>
         <button
         className="w-[max-content] justify-self-end hidden lg:block cursor-pointer"
@@ -65,10 +60,6 @@ export function Links() {
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </div>
-      <button
-      className="mt-[1rem] rounded-lg px-4 py-1 bg-sky-500 cursor-pointer text-slate-50 hover:scale-125 hover:bg-sky-600 duration-300 ease-out font-semibold ring-2 ring-sky-400/30">
-        Hire Me
-      </button>
     </div>
   )
 }

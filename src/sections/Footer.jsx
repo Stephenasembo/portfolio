@@ -1,5 +1,5 @@
-import reactIcon from "../assets/icons/react.svg"
-import { Pumpkin } from "../svgs"
+import reactIcon from "../assets/react.svg"
+import { Pumpkin } from "../HauntedSvgs"
 
 export default function Footer({haunted}) {
   return (
