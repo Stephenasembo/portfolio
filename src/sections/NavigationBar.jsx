@@ -41,15 +41,16 @@ export default function NavigationBar({haunted, setHaunted, darkTheme, setDarkMo
         {navExpanded && <Links
         updateLightTheme={setDarkMode}
         lightTheme={darkTheme}
+        className={`flex flex-col items-center ${darkTheme ? "text-gray-500" : "text-gray-800"}`}
         />}
       </div>
     </div>
   )
 }
 
-export function Links({updateLightTheme, lightTheme}) {
+export function Links({updateLightTheme, lightTheme, className=""}) {
   return (
-    <div className="my-2 text-lg">
+    <div className={`my-2 text-lg ${className}`}>
       <div className="flex items-center lg:hidden">
         <label htmlFor="dark">Dark mode</label>
         <input
@@ -59,11 +60,22 @@ export function Links({updateLightTheme, lightTheme}) {
         onChange={() => updateLightTheme(!lightTheme)}
         />
       </div>
-      <div className="flex flex-col lg:gap-[1rem]">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+      <div className="flex flex-col lg:gap-[1rem] gap-2 pt-2">
+        <a href="#about"
+        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"}`}
+        >About</a>
+
+        <a href="#projects"
+        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"}`}
+        >Projects</a>
+
+        <a href="#services"
+        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"}`}
+        >Services</a>
+
+        <a href="#contact"
+        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"}`}
+        >Contact</a>
       </div>
     </div>
   )

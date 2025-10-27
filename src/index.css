@@ -65,6 +65,10 @@
   .btn-contact {
     @apply flex gap-1 flex-col items-center
   }
+
+  .mobile-link {
+    @apply lg:border-none border-b pl-1
+  }
 }
 
 @keyframes float-sine {
