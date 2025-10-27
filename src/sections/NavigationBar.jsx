@@ -38,20 +38,26 @@ export default function NavigationBar({haunted, setHaunted, darkTheme, setDarkMo
         </button>
       </div>
       <div>
-        {navExpanded && <Links />}
+        {navExpanded && <Links
+        updateLightTheme={setDarkMode}
+        lightTheme={darkTheme}
+        />}
       </div>
     </div>
   )
 }
 
-export function Links() {
+export function Links({updateLightTheme, lightTheme}) {
   return (
     <div className="my-2 text-lg">
       <div className="flex items-center lg:hidden">
         <label htmlFor="dark">Dark mode</label>
         <input
         className="w-[3ch] h-[2ch] ml-1"
-        type="checkbox" name="dark" id="dark" />
+        type="checkbox" name="isDark" id="isDark"
+        checked={lightTheme}
+        onChange={() => updateLightTheme(!lightTheme)}
+        />
       </div>
       <div className="flex flex-col lg:gap-[1rem]">
         <a href="#about">About</a>
