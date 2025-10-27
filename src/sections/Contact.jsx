@@ -19,20 +19,20 @@ export default function Contact() {
         <div>
           <label htmlFor="name">Name:*</label>
           <input
-          className="border-1 block rounded-lg w-full py-2 px-[12px] mt-1 h-[48px] max-w-[480px]"
+          className="input"
           type="text" id="name" name="name" placeholder="Your name" required/>
         </div>
         <div>
           <label htmlFor="email">Email:*</label>
           <input
-          className="border-1 block rounded-lg w-full py-2 px-[12px] mt-1 h-[48px] max-w-[480px]"
+          className="input"
           type="email" id="email" name="email" placeholder="johndoe@gmail.com" required
           />
         </div>
         <div>
           <label htmlFor="message">Message:*</label>
           <textarea
-          className="border-1 block rounded-lg w-full py-2 px-[12px] mt-1 max-w-[480px]"
+          className="border-1 block rounded-lg w-full py-2 px-[12px] mt-1 max-w-[480px] placeholder:text-gray-500"
           id="message" name="message" placeholder="Your message..." required
           ></textarea>
         </div>

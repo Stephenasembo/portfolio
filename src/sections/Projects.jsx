@@ -1,4 +1,7 @@
 import projectImg from "../../public/vite.svg"
+import ProjectCard from "./components/ProjectCard"
+import AuthkitImg from "../assets/projects/Authkit_light_mode.png"
+import Joke404Img from "../assets/projects/joke404_logo.png"
 
 export default function Projects() {
   return (
@@ -9,79 +12,45 @@ export default function Projects() {
         className="sectionTitle">PROJECTS</h2>
       </div>
       <div className="flex flex-col gap-[2rem]">
-        <div
-        className=" border border-slate-300/60 rounded-xl p-2 shadow-sm hover:shadow-md cursor-pointer duration-300 ease-out hover:scale-105 hover:bg-slate-50/30"
-        >
-          <h3 className="text-lg my-2 font-medium">Scribbly</h3>
-          <div
-          className="lg:grid lg:grid-cols-[max-content_1fr] gap-[2rem]">
-            <img
-            src={projectImg}
-            width={100}
-            height={100}
-            />
-            <div>
-              <p>
-                A full-stack blogging platform with a client site for readers, an admin dashboard for content management and a backend API powering both sites.
-                Scribbly was designed to make content, creation fast, flexible and fun.
-              </p>
-              <div className="my-2 flex gap-2 flex-wrap">
-                <span className="border-1 rounded-full px-2">React</span>
-                <span className="border-1 rounded-full px-2">Expressjs</span>
-                <span className="border-1 rounded-full px-2">Nodejs</span>
-                <span className="border-1 rounded-full px-2">PostgreSQL</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-        className=" border border-slate-300/60 rounded-xl p-2 shadow-sm hover:shadow-md cursor-pointer duration-300 ease-out hover:scale-105 hover:bg-slate-50/30"
-        >
-          <h3 className="text-lg my-2 font-medium">Remindr</h3>
-          <div className="lg:grid lg:grid-cols-[max-content_1fr] gap-[2rem]">
-            <img
-            src={projectImg}
-            width={100}
-            height={100}
-            />
-            <div>
-              <p>
-                A modular notification platform that lets users schedule and manage recurring reminders across multiple channels, from email to chat apps.
-                Remindr was designed to automate notification delivery.
-              </p>
-              <div className="my-2 flex gap-2 flex-wrap">
-                <span className="border-1 rounded-full px-2">React</span>
-                <span className="border-1 rounded-full px-2">Expressjs</span>
-                <span className="border-1 rounded-full px-2">Nodejs</span>
-                <span className="border-1 rounded-full px-2">PostgreSQL</span>
-                <span className="border-1 rounded-full px-2">AWS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-        className=" border border-slate-300/60 rounded-xl p-2 shadow-sm hover:shadow-md cursor-pointer duration-300 ease-out hover:scale-105 hover:bg-slate-50/30"
-        >
-          <h3 className="text-lg my-2 font-medium">File Uploader</h3>
-          <div className="lg:grid lg:grid-cols-[max-content_1fr] gap-[2rem]">
-            <img
-            src={projectImg}
-            width={100}
-            height={100}
-            />
-            <div>
-              <p>
-                A secure cloud based file uploader system that lets users organize, manage, and share files with ease.
-                File Uploader was designed to simplify file management and sharing in the cloud.
-              </p>
-              <div className="my-2 flex gap-2">
-                <span className="border-1 rounded-full px-2">Expressjs</span>
-                <span className="border-1 rounded-full px-2">Nodejs</span>
-                <span className="border-1 rounded-full px-2">Supabase</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+          title="Authkit"
+          projectImg={AuthkitImg}
+          description="A modern, responsive authentication UI kit with client side form validation.
+           Authkit was designed to make authentication integration clean, fast and reusable."
+          stack={["Reactjs", "Formik", "Yup", "Tailwind"]}
+        />
+
+        <ProjectCard
+          title="Scribbly"
+          projectImg={projectImg}
+          description="A full-stack blogging platform with a client site for readers, an admin dashboard for content management and a backend API powering both sites.
+           Scribbly was designed to make content, creation fast, flexible and fun."
+          stack={["Reactjs", "Expressjs", "Nodejs", "PostgreSQL"]}
+        />
+
+        <ProjectCard
+          title="Joke404Bot"
+          projectImg={Joke404Img}
+          description="A Telegram bot that delivers jokes and explains them when you don't get it.
+           Joke404 blends humor and simplicity, offering category based jokes, emoji reactions, and friendly explanations to make humor accessible for everyone."
+          stack={["Nodejs", "Expressjs", "node-telegram-api", "Docker", "Railway"]}
+        />
+
+        <ProjectCard
+          title="File Uploader"
+          projectImg={projectImg}
+          description="A secure cloud based file uploader system that lets users organize, manage, and share files with ease.
+           File Uploader was designed to simplify file management and sharing in the cloud."
+          stack={["Expressjs", "Nodejs", "Supabase"]}
+        />
+
+        <ProjectCard
+          title="Remindr"
+          projectImg={projectImg}
+          description="A modular notification platform that lets users schedule and manage recurring reminders across multiple channels, from email to chat apps.
+           Remindr was designed to automate notification delivery."
+          stack={["Reactjs", "Expressjs", "Nodejs", "PostgreSQL"]}
+        />
       </div>
     </div>
   )
