@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 @layer components {
-  .haunted {
+  .haunted, .dark {
     @apply bg-black transition-all duration-700 text-gray-300;
   }
 
@@ -48,6 +48,10 @@
 
   .haunted .sectionTitle {
     @apply bg-violet-200/90 px-2 rounded-lg
+  }
+
+  .dark .sectionTitle {
+    @apply bg-neutral-900/90 px-2 text-gray-300 rounded-xl
   }
 
   .haunted a:hover {

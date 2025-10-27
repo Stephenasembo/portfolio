@@ -10,14 +10,17 @@ import { Spider } from './HauntedSvgs'
 import useMousePosition from './hooks'
 
 function App() {
+  const [isDark, setIsDark] = useState(false);
   const [haunted, setHaunted] = useState(false);
   const position = useMousePosition()
 
   return (
-    <div className={`relative px-4 lg:px-8 ${haunted ? "haunted" : "bg-slate-200"} transition-all duration-700`}>
+    <div className={`relative px-4 lg:px-8 ${haunted ? "haunted" : isDark ? "dark": "bg-slate-200"} transition-all duration-700`}>
       <NavigationBar
       haunted={haunted}
       setHaunted={setHaunted}
+      darkTheme={isDark}
+      setDarkMode={setIsDark}
       />
       {haunted && <Spider
       position={position}

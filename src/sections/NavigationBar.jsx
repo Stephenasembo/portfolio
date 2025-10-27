@@ -2,9 +2,8 @@ import { useState } from "react"
 import {Pumpkin, Dark, Light, Bulb} from "../HauntedSvgs";
 import { HorizontalBurger, VerticalBurger } from "./components/svgs";
 
-export default function NavigationBar({haunted, setHaunted}) {
+export default function NavigationBar({haunted, setHaunted, darkTheme, setDarkMode}) {
   const [navExpanded, setNavExpanded] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
   const [lit, setLit] = useState(true);
 
   return (
@@ -29,13 +28,13 @@ export default function NavigationBar({haunted, setHaunted}) {
           if(haunted) {
             setLit(!lit)
           } else {
-            setDarkMode(!darkMode)
+            setDarkMode(!darkTheme)
           }
         }}
         >
           {haunted ? <Bulb
           isLit={lit}
-          /> : darkMode ? <Dark /> : <Light />}
+          /> : darkTheme ? <Dark /> : <Light />}
         </button>
       </div>
       <div>
