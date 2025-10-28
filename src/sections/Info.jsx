@@ -24,11 +24,15 @@ export default function Info({haunted}) {
       </div>
       }
       <ul className="flex gap-[1.5rem] flex-col lg:mt-4">
-        <li className="social">
-          <GithubIcon />
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/Stephenasembo"
-          >View my projects</a>
-          <LinkArrow />
+        <li>
+          <a
+          className="social"
+          target="_blank" rel="noopener noreferrer" href="https://github.com/Stephenasembo"
+          >
+            <GithubIcon />
+            <span>View my projects</span>
+            <LinkArrow />
+          </a>
         </li>
         <li
         className="social"

@@ -52,7 +52,7 @@
   }
 
   .dark .sectionTitle {
-    @apply bg-neutral-900/90 px-2 text-gray-300 rounded-xl
+    @apply bg-neutral-900/90 px-2 text-gray-300 rounded-md
   }
 
   .haunted a:hover {

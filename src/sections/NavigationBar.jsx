@@ -1,6 +1,6 @@
 import { useState } from "react"
 import {Pumpkin, Dark, Light, Bulb} from "../HauntedSvgs";
-import { HorizontalBurger, VerticalBurger } from "./components/svgs";
+import { HorizontalBurger, MoonIcon, VerticalBurger, SunIcon } from "./components/svgs";
 
 export default function NavigationBar({haunted, setHaunted, darkTheme, setDarkMode}) {
   const [navExpanded, setNavExpanded] = useState(false);
@@ -34,7 +34,7 @@ export default function NavigationBar({haunted, setHaunted, darkTheme, setDarkMo
         >
           {haunted ? <Bulb
           isLit={lit}
-          /> : darkTheme ? <Dark /> : <Light />}
+          /> : darkTheme ? <SunIcon /> : <MoonIcon />}
         </button>
       </div>
       <div>
