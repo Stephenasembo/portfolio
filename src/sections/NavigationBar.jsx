@@ -62,20 +62,32 @@ export function Links({updateLightTheme, lightTheme, className=""}) {
       </div>
       <div className="flex flex-col lg:gap-[1rem] gap-2 pt-2">
         <a href="#about"
-        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"}`}
-        >About</a>
+        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"} group`}
+        >
+          <span className="link-indicator"></span>
+          <span>About</span>
+        </a>
 
         <a href="#projects"
-        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"}`}
-        >Projects</a>
+        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"} group`}
+        >
+          <span className="link-indicator"></span>
+          <span>Projects</span>
+        </a>
 
         <a href="#services"
-        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"}`}
-        >Services</a>
+        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"} group`}
+        >
+          <span className="link-indicator"></span>
+          <span>Services</span>
+        </a>
 
         <a href="#contact"
-        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"}`}
-        >Contact</a>
+        className={`mobile-link ${lightTheme ? "border-gray-300/30" : "border-gray-700/30"} group`}
+        >
+          <span className="link-indicator"></span>
+          <span>Contact</span>
+        </a>
       </div>
     </div>
   )
