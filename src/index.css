@@ -78,6 +78,10 @@
   .input {
     @apply border-1 block rounded-lg w-full py-2 px-[12px] mt-1 h-[48px] max-w-[480px] placeholder:text-gray-500
   }
+
+  .development-badge {
+    @apply bg-red-500/10 text-red-500 text-xs px-2 py-1 rounded-md border border-red-500/30 ml-2
+  }
 }
 
 @theme {

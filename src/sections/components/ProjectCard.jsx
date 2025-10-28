@@ -1,6 +1,6 @@
 import { LinkArrow } from "./svgs";
 
-export default function ProjectCard({projectLink, title, projectImg, description, stack}) {
+export default function ProjectCard({projectLink, title, projectImg, description, stack, inDevelopment}) {
   return (
     <a
     href={`${projectLink}`}
@@ -12,6 +12,7 @@ export default function ProjectCard({projectLink, title, projectImg, description
         <div className="flex gap-2 items-center">
           <h3 className="text-lg my-2 font-medium">{title}</h3>
           <LinkArrow />
+          {inDevelopment && <span className="development-badge">In development</span>}
         </div>
         <div
         className="md:grid md:grid-cols-[max-content_1fr] gap-[2rem]">

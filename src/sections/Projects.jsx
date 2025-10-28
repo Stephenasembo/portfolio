@@ -53,6 +53,7 @@ export default function Projects() {
         <ProjectCard
           projectLink="https://github.com/Stephenasembo/remindr"
           title="Remindr"
+          inDevelopment={true}
           projectImg={RemindrImg}
           description="A modular notification platform that lets users schedule and manage recurring reminders across multiple channels, from email to chat apps.
            Remindr was designed to automate notification delivery."
