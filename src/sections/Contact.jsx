@@ -1,4 +1,4 @@
-export default function Contact() {
+export default function Contact({isDark}) {
   return (
     <div className="my-2 relative mb-12">
       <div className="sticky top-0">
@@ -40,7 +40,9 @@ export default function Contact() {
         <input type="hidden" name="_gotcha" style={{display: "none"}}></input>
         <button
         type="submit"
-        className="w-[max-content] block mx-auto md:mx-0 p-1 rounded-lg px-2 my-2 bg-sky-500 cursor-pointer text-slate-50 hover:scale-125 hover:bg-sky-600 duration-300 ease-out font-semibold ring-2 ring-sky-400/30"
+        className={`w-full md:w-[max-content] block mx-auto md:mx-0 rounded-lg p-2 my-2 cursor-pointer
+        hover:scale-110 duration-300 ease-out font-semibold ring-2 ring-neutral-400/30
+        ${isDark ? "bg-slate-200 text-black" : "bg-black/85 text-slate-200"}`}
         >Send message</button>
       </form>
       <div className="flex gap-4 mt-4 mx-auto justify-center">

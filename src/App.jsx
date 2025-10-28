@@ -35,7 +35,9 @@ function App() {
           <About />
           <Projects />
           <Services />
-          <Contact />
+          <Contact
+          isDark={isDark}
+          />
           <Footer
           haunted={haunted}
           />

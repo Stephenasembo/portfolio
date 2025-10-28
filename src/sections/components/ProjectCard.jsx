@@ -14,8 +14,8 @@ export default function ProjectCard({projectLink, title, projectImg, description
           <LinkArrow />
         </div>
         <div
-        className="lg:grid lg:grid-cols-[max-content_1fr] gap-[2rem]">
-          <span className="rounded-lg flex items-center">
+        className="md:grid md:grid-cols-[max-content_1fr] gap-[2rem]">
+          <span className="rounded-lg flex items-center justify-center">
             <img
             src={projectImg}
             width={200}
